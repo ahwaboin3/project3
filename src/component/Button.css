@@ -1,0 +1,22 @@
+.button{
+    cursor:pointer;
+    border:none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    white-space: nowrap;
+    font-family: "Nanum Pen Script";
+}
+
+.button-default {
+    background-color: #ececec;
+    color: black;
+}
+.button-positive {
+    background-color: #64c964;
+    color: white;
+}
+.button-negative {
+    background-color: #fd565f;
+    color: white;
+}
