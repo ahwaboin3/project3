@@ -1,0 +1,31 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  .header > div {
+    display: flex;
+  }
+  
+  .header button {
+    font-family: "Nanum Pen Script";
+  }
+  
+  .header .header-title {
+    width: 50%;
+    font-size: 25px;
+    justify-content: center;
+  }
+  
+  .header .header-left {
+    width: 25%;
+    justify-content: start;
+  }
+  
+  .header .header-right {
+    width: 25%;
+    justify-content: end;
+  }
