@@ -8,7 +8,7 @@ const useDiary=(id)=>{
     const navigate=useNavigate()
 
     useEffect(()=>{
-        setTimeout(()=>{
+        //setTimeout(()=>{
             const matchDiary=data.find((it)=>String(it.id)===String(id))
             if(matchDiary){
                 setDiary(matchDiary)
@@ -16,7 +16,7 @@ const useDiary=(id)=>{
                 alert("일기가 존재하지 않습니다.")
                 navigate("/",{replace:true})
             }
-        },1000)
+        //},1000)
 
     },[id,data])
     return diary;

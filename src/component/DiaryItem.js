@@ -13,7 +13,7 @@ const DiaryItem=({id,emotionId,content,date})=>{
 
     //Edit 페이지로 이동하기
     const goEdit=()=>{
-        navigate(`/edit/%{id}`)
+        navigate(`/edit/${id}`)
     }
 
     return(
