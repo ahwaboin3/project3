@@ -8,13 +8,16 @@ const useDiary=(id)=>{
     const navigate=useNavigate()
 
     useEffect(()=>{
-        const matchDiary=data.find((it)=>String(it.id)===String(id))
-        if(matchDiary){
-            setDiary(matchDiary)
-        }else{
-            alert("일기가 존재하지 않습니다.")
-            navigate("/",{replace:true})
-        }
+        setTimeout(()=>{
+            const matchDiary=data.find((it)=>String(it.id)===String(id))
+            if(matchDiary){
+                setDiary(matchDiary)
+            }else{
+                alert("일기가 존재하지 않습니다.")
+                navigate("/",{replace:true})
+            }
+        },1000)
+
     },[id,data])
     return diary;
 }
